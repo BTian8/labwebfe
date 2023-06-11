@@ -51,7 +51,17 @@ const App = () => {
     if (key === "Team") {
       getMembers()
         .then((data) => {
-          setResource(data);
+          const members = data.map((member) => ({
+            name: member.name,
+            position: member.position,
+            department: member.department,
+            phone_number: member.phone_number,
+            email: member.email,
+            google_scholar_link: member.google_scholar_link,
+            twitter: member.twitter,
+            portrait_url: member.portrait_url,
+          }));
+          setResource(members);
           setTab(key);
         })
         .catch((err) => {
@@ -101,7 +111,6 @@ const App = () => {
               padding: "24px 96px 24px 96px",
               height: "100%",
               background: colorBgContainer,
-              overflow: "auto",
             }}
           >
             <ContentPage tabPicked={tabPicked} resource={resource} />

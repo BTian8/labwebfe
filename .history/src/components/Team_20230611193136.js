@@ -7,9 +7,16 @@ import {
 } from "@ant-design/icons";
 
 const Team = (data) => {
+  data.forEach((element) => {
+    console.log(element.name);
+  });
+
+  const startIndex = 0;
+  const endIndex = 3;
+
   const members = data.map((member, index) => {
     return (
-      <Col key={index} span={12}>
+      <Col key={index} span={8}>
         <div className="our-team">
           <div className="pic">
             <img src={member.portrait_url} alt=" " />
@@ -44,11 +51,12 @@ const Team = (data) => {
             </ul>
           </div>
           <div className="team-content">
-            <span className="title">{member.name}</span>
+            <span className="title">Qingbo (Roger) Yang</span>
             <span className="post">
-              {member.position}
+              Principal Investigator | Assistant Professor
               <br />
-              {member.department}
+              Cooperative Research | College of Agriculture Environment and
+              Human Sciences
             </span>
           </div>
         </div>

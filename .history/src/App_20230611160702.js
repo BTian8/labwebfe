@@ -101,7 +101,6 @@ const App = () => {
               padding: "24px 96px 24px 96px",
               height: "100%",
               background: colorBgContainer,
-              overflow: "auto",
             }}
           >
             <ContentPage tabPicked={tabPicked} resource={resource} />

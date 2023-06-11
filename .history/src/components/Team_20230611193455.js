@@ -7,6 +7,10 @@ import {
 } from "@ant-design/icons";
 
 const Team = (data) => {
+  data.forEach((element) => {
+    console.log(element.name);
+  });
+
   const members = data.map((member, index) => {
     return (
       <Col key={index} span={12}>
