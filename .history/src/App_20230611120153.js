@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import { Layout, Menu, theme } from "antd";
+import { getMembers } from "./utils";
 import ContentPage from "./components/ContentPage";
 import { getNews } from "./utils";
 import { message } from "antd";

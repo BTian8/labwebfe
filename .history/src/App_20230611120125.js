@@ -1,11 +1,30 @@
 import React, { useState } from "react";
 import "./index.css";
 import { Layout, Menu, theme } from "antd";
+import { getMembers } from "./utils";
 import ContentPage from "./components/ContentPage";
 import { getNews } from "./utils";
 import { message } from "antd";
 
 const { Header, Content, Footer } = Layout;
+
+function getItem(label, key, icon, children) {
+  return {
+    key,
+    icon,
+    children,
+    label,
+  };
+}
+
+function getAllMembers() {
+  const members = getMembers();
+  let membersList = [];
+  members.forEach((member, index) => {
+    membersList.push(getItem(member, index));
+  });
+  return membersList;
+}
 
 const items = [
   "Home",
