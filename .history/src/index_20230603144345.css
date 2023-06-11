@@ -1,0 +1,10 @@
+@import "~antd/dist/antd.css";
+
+h1 {
+  color: hsl(0 0% 98%);
+  font-size: x-large;
+}
+
+li {
+  font-size: inherit; /* Inherit the font size from the parent ul */
+}

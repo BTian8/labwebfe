@@ -1,0 +1,14 @@
+@import "~antd/dist/antd.css";
+
+h1 {
+  color: hsl(0 0% 98%);
+  font-size: x-large;
+}
+
+.ant-timeline-item {
+  font-size: 18px; /* Set the desired font size for the Timeline content */
+}
+
+.ant-timeline-item-label {
+  font-size: 18px; /* Set the desired font size for the Timeline time */
+}

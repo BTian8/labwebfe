@@ -1,0 +1,7 @@
+@import "~antd/dist/antd.css";
+
+h1 {
+  font-size: clamp(3rem, 15vmin, 8rem);
+  font-family: sans-serif;
+  color: hsl(0 0% 98%);
+}

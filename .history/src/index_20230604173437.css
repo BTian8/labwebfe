@@ -1,0 +1,47 @@
+@import "~antd/dist/antd.css";
+
+#webName {
+  margin-top: 0.5em;
+  color: hsl(0 0% 98%);
+  font-size: x-large;
+  padding: 8px;
+  min-width: 310px;
+}
+
+#welcomeTitle {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+}
+
+p {
+  color: #333;
+  font-family: "Muli", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ant-timeline-item.ant-timeline-item-right {
+  font-size: 18px; /* Set the desired font size for the Timeline content */
+}
+
+.ant-timeline .ant-timeline-item-head {
+  width: 12px;
+  height: 12px;
+}
+
+.ant-timeline.ant-timeline-label .ant-timeline-item-label {
+  top: -6.001px;
+}
+
+.ant-timeline.ant-timeline-alternate .ant-timeline-item-head,
+.ant-timeline.ant-timeline-right .ant-timeline-item-head,
+.ant-timeline.ant-timeline-label .ant-timeline-item-head {
+  margin-left: -5px;
+}
+
+.ant-dropdown {
+  position: static !important;
+}

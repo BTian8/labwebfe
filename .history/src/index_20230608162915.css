@@ -1,0 +1,133 @@
+@import "~antd/dist/antd.css";
+
+#webName {
+  margin-top: 0.5em;
+  color: hsl(0 0% 98%);
+  font-size: x-large;
+  padding: 8px 8px 8px 0px;
+  min-width: 310px;
+}
+
+#welcomeTitle {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+}
+
+#welcomeP {
+  color: #333;
+  font-family: "Muli", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.ant-timeline-item.ant-timeline-item-right {
+  font-size: 18px; /* Set the desired font size for the Timeline content */
+}
+
+.ant-timeline .ant-timeline-item-head {
+  width: 12px;
+  height: 12px;
+}
+
+.ant-timeline.ant-timeline-label .ant-timeline-item-label {
+  top: -6.001px;
+}
+
+.ant-timeline.ant-timeline-alternate .ant-timeline-item-head,
+.ant-timeline.ant-timeline-right .ant-timeline-item-head,
+.ant-timeline.ant-timeline-label .ant-timeline-item-head {
+  margin-left: -5px;
+}
+
+.ant-row {
+  height: 100%;
+}
+
+.ant-col {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-team {
+  border: 1px solid #dedede;
+  text-align: center;
+  color: #001529;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+  height: 100%;
+  max-height: min-content;
+  max-width: min-content;
+}
+.our-team:hover {
+  background: #001529;
+  color: #fff;
+}
+.our-team .pic {
+  position: relative;
+}
+.our-team .pic img {
+  transition: all 0.3s ease 0s;
+  height: 252px;
+  width: 180px;
+}
+.our-team:hover .pic img {
+  transform: translateY(-20px);
+}
+.our-team .social {
+  width: 20%;
+  height: 100%;
+  background: #001529;
+  padding: 20px 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  transition: all 0.5s ease 0s;
+  display: flex;
+  justify-content: center;
+}
+.our-team:hover .social {
+  left: 0;
+}
+.our-team .social li {
+  display: block;
+}
+.our-team .social li a {
+  display: block;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #fff;
+  transition: all 0.5s ease 0s;
+}
+.our-team .social li a:hover {
+  color: #2b6aff;
+}
+.our-team .team-content {
+  padding: 25px 0;
+}
+.our-team .title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  display: block;
+}
+
+.our-team .post {
+  display: block;
+  font-size: 15px;
+  text-transform: capitalize;
+  max-width: 100%;
+}
+@media only screen and (max-width: 990px) {
+  .our-team {
+    margin-bottom: 30px;
+  }
+}
