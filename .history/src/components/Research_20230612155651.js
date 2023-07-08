@@ -11,7 +11,7 @@ const Research = () => {
   return (
     <Row>
       <Col span={12}>
-        <Carousel autoplay>
+        <Carousel autoplay style={{ padding: "auto" }}>
           <div>
             <h3 style={contentStyle}>1</h3>
           </div>

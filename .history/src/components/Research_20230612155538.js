@@ -11,7 +11,7 @@ const Research = () => {
   return (
     <Row>
       <Col span={12}>
-        <Carousel autoplay>
+        <Carousel autoplay style={{ padding: "auto" }}>
           <div>
             <h3 style={contentStyle}>1</h3>
           </div>
@@ -27,7 +27,7 @@ const Research = () => {
         </Carousel>
       </Col>
       <Col span={12}>
-        <div style={{ padding: "24px", fontSize: "larger" }}>
+        <div style={{ padding: "24px" }}>
           Our laboratory is interested in using a variety of chromatographic and
           optical instruments to explore multi-channel biosystem-related
           signals. We use our expertise in analytical chemistry, sensor design &

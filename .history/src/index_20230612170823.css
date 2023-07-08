@@ -50,7 +50,6 @@
   max-width: 586px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .our-team:hover {
   background: #001529;
@@ -97,7 +96,6 @@
 }
 .our-team .team-content {
   padding: 25px 0;
-  overflow: scroll;
 }
 .our-team .title {
   font-size: 20px;
@@ -137,7 +135,7 @@
   position: absolute;
   top: 20px;
   width: 2px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .uk-timeline .uk-timeline-item .uk-timeline-icon .uk-badge {

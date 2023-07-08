@@ -137,7 +137,7 @@
   position: absolute;
   top: 20px;
   width: 2px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .uk-timeline .uk-timeline-item .uk-timeline-icon .uk-badge {

@@ -1,18 +1,20 @@
 import "uikit/dist/css/uikit.min.css";
 
 const News = (data) => {
-  const news = data.map((news, index) => {
+  const news = data.map((news, key) => {
     return (
-      <div key={index} className="uk-timeline-item">
-        <div className="uk-timeline-icon" style={{ zIndex: "1" }}>
-          <span className="uk-badge"></span>
+      <div className="uk-timeline-item">
+        <div className="uk-timeline-icon">
+          <span className="uk-badge">
+            <span uk-icon="check"></span>
+          </span>
         </div>
         <div className="uk-timeline-content">
           <div className="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
             <div className="uk-card-header">
-              <div className="uk-grid-small uk-flex-middle" data-uk-grid>
+              <div className="uk-grid-small uk-flex-middle" uk-grid>
                 <h3 className="uk-card-title">
-                  <time dateTime="2020-07-08">{news.date}</time>
+                  <time datetime="2020-07-08">{news.date}</time>
                 </h3>
               </div>
             </div>

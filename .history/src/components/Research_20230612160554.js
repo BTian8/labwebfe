@@ -1,8 +1,8 @@
 import { Carousel, Row, Col } from "antd";
 const contentStyle = {
-  height: "540px",
+  height: "100%",
   color: "#fff",
-  lineHeight: "540px",
+  lineHeight: "100%",
   textAlign: "center",
   background: "#364d79",
 };

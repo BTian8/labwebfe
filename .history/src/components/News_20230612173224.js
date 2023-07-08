@@ -4,7 +4,7 @@ const News = (data) => {
   const news = data.map((news, index) => {
     return (
       <div key={index} className="uk-timeline-item">
-        <div className="uk-timeline-icon" style={{ zIndex: "1" }}>
+        <div className="uk-timeline-icon">
           <span className="uk-badge"></span>
         </div>
         <div className="uk-timeline-content">

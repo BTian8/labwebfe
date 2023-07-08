@@ -130,14 +130,14 @@
 }
 
 .uk-timeline .uk-timeline-item::before {
-  background: #dadee4;
-  content: "";
+  background: #4d77b5 !important;
+  content: " ";
   height: 100%;
   left: 19px;
   position: absolute;
   top: 20px;
   width: 2px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .uk-timeline .uk-timeline-item .uk-timeline-icon .uk-badge {

@@ -50,7 +50,6 @@
   max-width: 586px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .our-team:hover {
   background: #001529;
@@ -61,8 +60,8 @@
 }
 .our-team .pic img {
   transition: all 0.3s ease 0s;
-  height: none;
-  width: none;
+  height: 302px;
+  width: 216px;
 }
 .our-team:hover .pic img {
   transform: translateX(-20px);
@@ -97,7 +96,7 @@
 }
 .our-team .team-content {
   padding: 25px 0;
-  overflow: scroll;
+  width: 50%;
 }
 .our-team .title {
   font-size: 20px;
@@ -137,7 +136,7 @@
   position: absolute;
   top: 20px;
   width: 2px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .uk-timeline .uk-timeline-item .uk-timeline-icon .uk-badge {

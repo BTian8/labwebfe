@@ -3,9 +3,11 @@ import "uikit/dist/css/uikit.min.css";
 const News = (data) => {
   const news = data.map((news, index) => {
     return (
-      <div key={index} className="uk-timeline-item">
-        <div className="uk-timeline-icon" style={{ zIndex: "1" }}>
-          <span className="uk-badge"></span>
+      <div className="uk-timeline-item">
+        <div className="uk-timeline-icon">
+          <span className="uk-badge">
+            <span uk-icon="check"></span>
+          </span>
         </div>
         <div className="uk-timeline-content">
           <div className="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
