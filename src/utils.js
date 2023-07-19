@@ -11,8 +11,8 @@ const SERVER_ORIGIN = "";
 
 const newsUrl = `${SERVER_ORIGIN}/News`;
 
-export const getNews = () => {
-  return fetch(newsUrl, { method: "GET" }).then((response) => {
+export const getNews = async () => {
+  return await fetch(newsUrl, { method: "GET" }).then((response) => {
     if (response.status !== 200) {
       throw Error("Fail to get news");
     }
@@ -22,8 +22,8 @@ export const getNews = () => {
 
 const memberUrl = `${SERVER_ORIGIN}/Member`;
 
-export const getMembers = () => {
-  return fetch(memberUrl, { method: "GET" }).then((response) => {
+export const getMembers = async () => {
+  return await fetch(memberUrl, { method: "GET" }).then((response) => {
     if (response.status !== 200) {
       throw Error("Fail to get news");
     }
